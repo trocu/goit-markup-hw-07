@@ -29,7 +29,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
     />
     <link
-      href="./css/styles.css"
+      href="./css/main.min.css"
       rel="stylesheet"
     />
   </head>
@@ -39,45 +39,56 @@
     <!-- Header -->
     <!-- ====== -->
     <header>
-      <div class="section-border">
-        <div class="container">
-          <div class="nav-wrap-content">
+      <div class="c-header-border">
+        <div class="l-container">
+          <div class="l-header-stack">
+            <!-- LOGO -->
             <a
-              class="logo"
+              class="c-logo"
               href="index.html"
               target="_self"
-              ><span class="logo-first-color">Web</span
-              ><span class="logo-blk-color">Studio</span></a
+              ><span class="c-logo c-logo--brand">Web</span
+              ><span class="c-logo c-logo--black">Studio</span></a
             >
-            <nav class="nav-menu">
-              <ul class="hidden-dot link-nav">
-                <li>
+
+            <!-- NAV -->
+            <nav class="c-nav">
+              <ul class="c-menu">
+                <li class="c-menu__item">
                   <a
-                    class="link-nav-agency"
+                    class="c-menu__link c-menu__link--active"
                     href="index.html"
                     target="_self"
                     >Agencja</a
                   >
                 </li>
-                <li>
+                <li class="c-menu__item">
                   <a
+                    class="c-menu__link"
                     href="portfolio.html"
                     target="_self"
                     >Portfolio</a
                   >
                 </li>
-                <li>
-                  <a href="#">Kontakt</a>
+                <li class="c-menu__item">
+                  <a
+                    class="c-menu__link"
+                    href="#"
+                    >Kontakt</a
+                  >
                 </li>
               </ul>
             </nav>
-            <div class="nav-contact">
-              <ul class="hidden-dot">
-                <li>
+
+            <!-- CONTACT -->
+            <div class="l-contact-stack">
+              <ul class="c-contact-list">
+                <li class="c-contact-list__item">
                   <a
-                    class="link-contact"
+                    class="c-contact-list__link"
                     href="mailto:info@devstudio.com"
                     ><svg
+                      class="c-contact-list__icon"
                       width="16"
                       height="12"
                     >
@@ -86,11 +97,12 @@
                     info@devstudio.com</a
                   >
                 </li>
-                <li>
+                <li class="c-contact-list__item">
                   <a
-                    class="link-contact"
+                    class="c-contact-list__link"
                     href="tel:+48111111111"
                     ><svg
+                      class="c-contact-list__icon"
                       width="10"
                       height="16"
                     >
@@ -110,13 +122,13 @@
     <!-- Main content -->
     <!-- ============ -->
     <main>
-      <!-- Main title section -->
-      <section class="grey-rectangle section">
-        <div class="container">
-          <div class="main-title-wrap">
-            <h1 class="main-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+      <!-- Slider section -->
+      <section class="l-section l-section--slider">
+        <div class="l-container">
+          <div class="c-slider">
+            <h1 class="c-slider__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
             <button
-              class="main-button"
+              class="c-button c-button--order"
               type="button"
               data-modal-open
             >
@@ -125,153 +137,174 @@
           </div>
         </div>
       </section>
-      <!-- Lorem ipsum & what we do section -->
-      <section class="section">
-        <div class="container">
-          <div class="main-txt-wrapper">
-            <h2 class="hidden-title">This title has been set to mute the validator ;)</h2>
-            <ul class="main-txt hidden-dot">
-              <li>
-                <div class="main-txt-icon-box">
+
+      <!-- Offer section -->
+      <section class="l-section">
+        <div class="l-container">
+          <div class="l-offer-stack">
+            <h2 class="c-section__title c-section__title--hidden">
+              This title has been set to mute the validator ;)
+            </h2>
+            <ul class="c-offer">
+              <li class="c-offer__item">
+                <div class="c-offer__body">
                   <svg
+                    class="c-offer__icon"
                     width="70"
                     height="70"
                   >
                     <use href="./images/icons.svg#icon-antenna"></use>
                   </svg>
                 </div>
-                <h3>LOREM IPSUM</h3>
-                <p>
+                <h3 class="c-offer__title">LOREM IPSUM</h3>
+                <p class="c-offer__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                   sodales dui. Interdum et malesuada
                 </p>
               </li>
-              <li>
-                <div class="main-txt-icon-box">
+              <li class="c-offer__item">
+                <div class="c-offer__body">
                   <svg
+                    class="c-offer__icon"
                     width="70"
                     height="70"
                   >
                     <use href="./images/icons.svg#icon-clock"></use>
                   </svg>
                 </div>
-                <h3>LOREM IPSUM</h3>
-                <p>
+                <h3 class="c-offer__title">LOREM IPSUM</h3>
+                <p class="c-offer__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                   sodales dui. Interdum et malesuada
                 </p>
               </li>
-              <li>
-                <div class="main-txt-icon-box">
+              <li class="c-offer__item">
+                <div class="c-offer__body">
                   <svg
+                    class="c-offer__icon"
                     width="70"
                     height="70"
                   >
                     <use href="./images/icons.svg#icon-diagram"></use>
                   </svg>
                 </div>
-                <h3>LOREM IPSUM</h3>
-                <p>
+                <h3 class="c-offer__title">LOREM IPSUM</h3>
+                <p class="c-offer__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                   sodales dui. Interdum et malesuada
                 </p>
               </li>
-              <li>
-                <div class="main-txt-icon-box">
+              <li class="c-offer__item">
+                <div class="c-offer__body">
                   <svg
+                    class="c-offer__icon"
                     width="70"
                     height="70"
                   >
                     <use href="./images/icons.svg#icon-astronaut"></use>
                   </svg>
                 </div>
-                <h3>LOREM IPSUM</h3>
-                <p>
+                <h3 class="c-offer__title">LOREM IPSUM</h3>
+                <p class="c-offer__text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                   sodales dui. Interdum et malesuada
                 </p>
               </li>
             </ul>
           </div>
-          <!-- What we do section -->
-          <h2 class="section-title">Czym się zajmujemy</h2>
-          <div class="main-foto-wrapper">
-            <ul class="hidden-dot">
-              <li>
+
+          <!-- Use case section -->
+          <h2 class="c-section__title c-section__title--margin">Czym się zajmujemy</h2>
+          <div class="l-use-case-stack">
+            <ul class="c-use-case">
+              <li class="c-use-case__item">
                 <img
+                  class="c-use-case__img"
                   src="./images/project1.jpg"
                   alt="Programer working his desk office"
                   width="370"
                   height="294"
                 />
-                <div class="main-foto-overlay">
-                  <p>Aplikacje komputerowe</p>
+                <div class="c-use-case__overlay">
+                  <p class="c-use-case__text">Aplikacje komputerowe</p>
                 </div>
               </li>
-              <li>
+              <li class="c-use-case__item">
                 <img
+                  class="c-use-case__img"
                   src="./images/project2.jpg"
                   alt="Designer is developing application"
                   width="370"
                   height="294"
                 />
-                <div class="main-foto-overlay">
-                  <p>Aplikacje mobilne</p>
+                <div class="c-use-case__overlay">
+                  <p class="c-use-case__text">Aplikacje mobilne</p>
                 </div>
               </li>
-              <li>
+              <li class="c-use-case__item">
                 <img
+                  class="c-use-case__img"
                   src="./images/project3.jpg"
                   alt="Artist working with colour"
                   width="370"
                   height="294"
                 />
-                <div class="main-foto-overlay">
-                  <p>Rozwiązania graficzne</p>
+                <div class="c-use-case__overlay">
+                  <p class="c-use-case__text">Rozwiązania graficzne</p>
                 </div>
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <!-- About us section -->
-      <section class="about-us section">
-        <div class="container">
-          <h2 class="section-title">Nasz zespół</h2>
-          <div class="about-us-wrapper">
-            <ul class="hidden-dot about-us-box">
-              <li>
+
+      <!-- Team section -->
+      <section class="l-section l-section--color">
+        <div class="l-container">
+          <h2 class="c-section__title">Nasz zespół</h2>
+          <div class="l-team-stack">
+            <ul class="c-team">
+              <li class="c-team__card">
                 <img
+                  class="c-team__img"
                   src="./images/team1.jpg"
                   alt="Product Designer"
                   width="270"
                   height="260"
                 />
-                <h3>John Doe</h3>
-                <p>Product Designer</p>
-                <div class="icon-aboutus-wrapper">
-                  <a href="#"
+                <h3 class="c-team__name">John Doe</h3>
+                <p class="c-team__position">Product Designer</p>
+                <div class="c-social-media">
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
                     >
                       <use href="./images/icons.svg#icon-instagram"></use></svg
                   ></a>
-                  <a href="#"
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
                     >
                       <use href="./images/icons.svg#icon-twitter"></use></svg
                   ></a>
-                  <a href="#"
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
                     >
                       <use href="./images/icons.svg#icon-facebook"></use></svg
                   ></a>
-                  <a href="#"
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
@@ -280,38 +313,47 @@
                   ></a>
                 </div>
               </li>
-              <li>
+              <li class="c-team__card">
                 <img
+                  class="c-team__img"
                   src="./images/team2.jpg"
                   alt="Frontend Developer"
                   width="270"
                   height="260"
                 />
-                <h3>John Doe</h3>
-                <p>Frontend Developer</p>
-                <div class="icon-aboutus-wrapper">
-                  <a href="#"
+                <h3 class="c-team__name">John Doe</h3>
+                <p class="c-team__position">Frontend Developer</p>
+                <div class="c-social-media">
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
                     >
                       <use href="./images/icons.svg#icon-instagram"></use></svg
                   ></a>
-                  <a href="#"
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
                     >
                       <use href="./images/icons.svg#icon-twitter"></use></svg
                   ></a>
-                  <a href="#"
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
                     >
                       <use href="./images/icons.svg#icon-facebook"></use></svg
                   ></a>
-                  <a href="#"
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
@@ -320,38 +362,47 @@
                   ></a>
                 </div>
               </li>
-              <li>
+              <li class="c-team__card">
                 <img
+                  class="c-team__img"
                   src="./images/team3.jpg"
                   alt="Marketing"
                   width="270"
                   height="260"
                 />
-                <h3>John Doe</h3>
-                <p>Marketing</p>
-                <div class="icon-aboutus-wrapper">
-                  <a href="#"
+                <h3 class="c-team__name">John Doe</h3>
+                <p class="c-team__position">Marketing</p>
+                <div class="c-social-media">
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
                     >
                       <use href="./images/icons.svg#icon-instagram"></use></svg
                   ></a>
-                  <a href="#"
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
                     >
                       <use href="./images/icons.svg#icon-twitter"></use></svg
                   ></a>
-                  <a href="#"
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
                     >
                       <use href="./images/icons.svg#icon-facebook"></use></svg
                   ></a>
-                  <a href="#"
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
@@ -360,38 +411,47 @@
                   ></a>
                 </div>
               </li>
-              <li>
+              <li class="c-team__card">
                 <img
+                  class="c-team__img"
                   src="./images/team4.jpg"
                   alt="UI Designer"
                   width="270"
                   height="260"
                 />
-                <h3>John Doe</h3>
-                <p>UI Designer</p>
-                <div class="icon-aboutus-wrapper">
-                  <a href="#"
+                <h3 class="c-team__name">John Doe</h3>
+                <p class="c-team__position">UI Designer</p>
+                <div class="c-social-media">
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
                     >
                       <use href="./images/icons.svg#icon-instagram"></use></svg
                   ></a>
-                  <a href="#"
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
                     >
                       <use href="./images/icons.svg#icon-twitter"></use></svg
                   ></a>
-                  <a href="#"
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
                     >
                       <use href="./images/icons.svg#icon-facebook"></use></svg
                   ></a>
-                  <a href="#"
+                  <a
+                    class="c-social-media__link"
+                    href="#"
                     ><svg
                       width="20"
                       height="20"
@@ -404,12 +464,16 @@
           </div>
         </div>
       </section>
-      <!-- Our customers section  -->
-      <section class="section">
-        <div class="container">
-          <h2 class="section-title">Nasi klienci</h2>
-          <div class="our-customers-wrapper">
-            <a href="#">
+
+      <!-- Clients section -->
+      <section class="l-section">
+        <div class="l-container">
+          <h2 class="c-section__title">Nasi klienci</h2>
+          <div class="c-clients">
+            <a
+              class="c-clients__link"
+              href="#"
+            >
               <svg
                 width="170"
                 height="92"
@@ -417,7 +481,10 @@
                 <use href="./images/icons.svg#icon-Client1"></use>
               </svg>
             </a>
-            <a href="#">
+            <a
+              class="c-clients__link"
+              href="#"
+            >
               <svg
                 width="170"
                 height="92"
@@ -425,7 +492,10 @@
                 <use href="./images/icons.svg#icon-Client2"></use>
               </svg>
             </a>
-            <a href="#">
+            <a
+              class="c-clients__link"
+              href="#"
+            >
               <svg
                 width="170"
                 height="92"
@@ -433,7 +503,10 @@
                 <use href="./images/icons.svg#icon-Client3"></use>
               </svg>
             </a>
-            <a href="#">
+            <a
+              class="c-clients__link"
+              href="#"
+            >
               <svg
                 width="170"
                 height="92"
@@ -441,7 +514,10 @@
                 <use href="./images/icons.svg#icon-Client4"></use>
               </svg>
             </a>
-            <a href="#">
+            <a
+              class="c-clients__link"
+              href="#"
+            >
               <svg
                 width="170"
                 height="92"
@@ -449,7 +525,10 @@
                 <use href="./images/icons.svg#icon-Client5"></use>
               </svg>
             </a>
-            <a href="#">
+            <a
+              class="c-clients__link"
+              href="#"
+            >
               <svg
                 width="170"
                 height="92"
@@ -466,55 +545,71 @@
     <!-- Footer -->
     <!-- ====== -->
     <footer>
-      <div class="footer-box">
-        <div class="container footer-wrapper">
-          <!-- Adress section  -->
-          <div class="footer-address">
+      <div class="c-footer c-footer--color">
+        <div class="l-container l-container--footer">
+          <!-- Adress section -->
+          <div class="l-adress-stack">
             <a
-              class="logo-footer"
+              class="c-logo c-logo--footer"
               href="index.html"
               target="_self"
-              ><span class="logo-first-color">Web</span><span class="logo-wh-color">Studio</span></a
+              ><span class="c-logo--brand">Web</span><span class="c-logo--white">Studio</span></a
             >
-            <address>
-              <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-              <ul class="hidden-dot link-footer">
-                <li>
-                  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <address class="c-address">
+              <p class="c-address__text">m. Warszawa, Aleje Jerozolimskie 21</p>
+              <ul class="c-address__list">
+                <li class="c-address__item">
+                  <a
+                    class="c-address__link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
                 </li>
-                <li>
-                  <a href="tel:+48111111111">+48 111 111 111</a>
+                <li class="c-address__item">
+                  <a
+                    class="c-address__link"
+                    href="tel:+48111111111"
+                    >+48 111 111 111</a
+                  >
                 </li>
               </ul>
             </address>
           </div>
 
-          <!-- Social media section  -->
-          <div class="footer-socialmmedia">
-            <p>Dołącz do nas</p>
-            <div class="icon-footer-wrapper">
-              <a href="#"
+          <!-- Social media section -->
+          <div class="c-footer-social-media">
+            <p class="c-footer-social-media__title">Dołącz do nas</p>
+            <div class="c-social-media">
+              <a
+                class="c-social-media__link c-social-media__link--footer"
+                href="#"
                 ><svg
                   width="20"
                   height="20"
                 >
                   <use href="./images/icons.svg#icon-instagram"></use></svg
               ></a>
-              <a href="#"
+              <a
+                class="c-social-media__link c-social-media__link--footer"
+                href="#"
                 ><svg
                   width="20"
                   height="20"
                 >
                   <use href="./images/icons.svg#icon-twitter"></use></svg
               ></a>
-              <a href="#"
+              <a
+                class="c-social-media__link c-social-media__link--footer"
+                href="#"
                 ><svg
                   width="20"
                   height="20"
                 >
                   <use href="./images/icons.svg#icon-facebook"></use></svg
               ></a>
-              <a href="#"
+              <a
+                class="c-social-media__link c-social-media__link--footer"
+                href="#"
                 ><svg
                   width="20"
                   height="20"
@@ -524,27 +619,33 @@
             </div>
           </div>
 
-          <!-- Form section -->
-          <div class="footer-form">
-            <form name="signup-form">
-              <label>
-                <span>Zapisz się do newslettera</span>
+          <!-- Signup form section -->
+          <div class="l-form-stack">
+            <form
+              class="c-signup-form"
+              name="signup-form"
+            >
+              <label class="c-signup-form__body">
+                <span class="c-signup-form__label">Zapisz się do newslettera</span>
                 <input
+                  class="c-signup-form__input"
                   type="email"
                   name="email"
                   placeholder="E-mail"
                 />
               </label>
-              <div class="form-signin">
-                <button type="submit">
-                  Zapisz się<svg
-                    width="24"
-                    height="24"
-                  >
-                    <use href="./images/icons.svg#icon-send"></use>
-                  </svg>
-                </button>
-              </div>
+              <button
+                class="c-button c-button--signup"
+                type="submit"
+              >
+                Zapisz się<svg
+                  class="c-signup-form__icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
             </form>
           </div>
         </div>
@@ -555,13 +656,13 @@
     <!-- Modal window -->
     <!-- ============ -->
     <div
-      class="backdrop is-hidden"
+      class="l-backdrop is-hidden"
       data-modal
     >
-      <div class="modal-box">
-        <div class="modal-button-box">
+      <div class="c-modal">
+        <div class="c-close-btn">
           <button
-            class="modal-button"
+            class="c-close-btn__button"
             type="button"
             data-modal-close
           >
@@ -575,56 +676,59 @@
         </div>
 
         <!-- Form section -->
-        <div class="modal-form">
-          <form>
-            <p>Zostaw swoje dane w formularzu poniżej</p>
+        <div class="l-modal-stack">
+          <form class="c-modal-form">
+            <p class="c-modal-form__title">Zostaw swoje dane w formularzu poniżej</p>
 
             <!-- Input name START  -->
-            <label class="order-label">
-              <span>Imię</span>
+            <label class="c-modal-form__body">
+              <span class="c-modal-form__label">Imię</span>
               <span>
                 <svg
-                  class="order-icon"
+                  class="c-modal-form__icon"
                   width="18"
                   height="18"
                 >
                   <use href="./images/icons.svg#icon-person"></use></svg
               ></span>
               <input
+                class="c-modal-form__input"
                 type="text"
                 name="name"
               />
             </label>
             <!-- Input name END -->
             <!-- Input phone START  -->
-            <label class="order-label">
-              <span>Telefon</span>
+            <label class="c-modal-form__body">
+              <span class="c-modal-form__label">Telefon</span>
               <span>
                 <svg
-                  class="order-icon"
+                  class="c-modal-form__icon"
                   width="18"
                   height="18"
                 >
                   <use href="./images/icons.svg#icon-phone"></use></svg
               ></span>
               <input
+                class="c-modal-form__input"
                 type="tel"
                 name="phone"
               />
             </label>
             <!-- Input phone END -->
             <!-- Input email START  -->
-            <label class="order-label">
-              <span>Email</span>
+            <label class="c-modal-form__body">
+              <span class="c-modal-form__label">Email</span>
               <span>
                 <svg
-                  class="order-icon"
+                  class="c-modal-form__icon"
                   width="18"
                   height="18"
                 >
                   <use href="./images/icons.svg#icon-email"></use></svg
               ></span>
               <input
+                class="c-modal-form__input"
                 type="email"
                 name="email"
               />
@@ -632,10 +736,10 @@
             <!-- Input email END -->
 
             <!-- Textarea comment START  -->
-            <label class="order-label">
-              <span>Komentarz</span>
+            <label class="c-modal-form__body">
+              <span class="c-modal-form__label">Komentarz</span>
               <textarea
-                class="order-comment"
+                class="c-modal-form__textarea"
                 name="comment"
                 placeholder="Wprowadź tekst"
               ></textarea>
@@ -643,33 +747,47 @@
             <!-- Textarea comment END -->
 
             <!-- Statement checkbox START -->
-            <div class="order-checkbox-wraper">
-              <label class="checkbox-label">
+            <div class="c-custom-checkbox">
+              <label class="c-custom-checkbox__label">
                 <input
-                  class="order-checkbox"
+                  class="c-custom-checkbox__input"
                   type="checkbox"
                   name="statement"
                   value="agree"
                 />
-                <span class="order-checkbox-custom"
+                <span class="c-custom-checkbox__body"
                   ><svg
-                    class="order-checkmark"
+                    class="c-custom-checkbox__icon"
                     width="13"
                     height="13"
                   >
                     <use href="./images/icons.svg#icon-check"></use></svg
                 ></span>
-                <span
-                  >Oświadczam iż akceptuję <a href="#">Regulamin</a> i
-                  <a href="#">Politykę Prywatności.</a></span
+                <span class="c-custom-checkbox__text"
+                  >Oświadczam iż akceptuję
+                  <a
+                    class="c-custom-checkbox__link"
+                    href="#"
+                    >Regulamin</a
+                  >
+                  i
+                  <a
+                    class="c-custom-checkbox__link"
+                    href="#"
+                    >Politykę Prywatności.</a
+                  ></span
                 >
               </label>
             </div>
             <!-- Statement checkbox END -->
-
-            <div class="order-send-btn">
-              <button type="submit">Wyślij</button>
-            </div>
+            <!-- Statement button START -->
+            <button
+              class="c-button c-button--send"
+              type="submit"
+            >
+              Wyślij
+            </button>
+            <!-- Statement button END -->
           </form>
         </div>
       </div>

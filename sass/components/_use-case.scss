@@ -1,0 +1,35 @@
+.c-use-case {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  list-style-type: none;
+  padding: 0;
+
+  &__item {
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+  }
+
+  &__img {
+    display: block;
+  }
+
+  &__overlay {
+    width: 370px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(47 48 58 / 0.8);
+    padding: 13.5px 0;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-item;
+  }
+}

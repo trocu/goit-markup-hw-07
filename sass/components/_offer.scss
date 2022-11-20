@@ -1,0 +1,42 @@
+.c-offer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  list-style-type: none;
+  padding: 0;
+
+  &__item {
+    min-width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  &__body {
+    background-color: $light-item-color;
+    border-radius: 4px;
+    padding: 25px 0;
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $light-txt-color;
+  }
+}

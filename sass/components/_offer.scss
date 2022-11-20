@@ -3,8 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  list-style-type: none;
-  padding: 0;
+  @include nodot;
 
   &__item {
     min-width: 270px;

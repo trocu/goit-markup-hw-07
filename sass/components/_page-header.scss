@@ -16,8 +16,7 @@
 }
 
 .c-menu {
-  list-style-type: none;
-  padding: 0;
+  @include nodot;
 
   &__item {
     position: relative;
@@ -62,8 +61,7 @@
 }
 
 .c-contact-list {
-  list-style-type: none;
-  padding: 0;
+  @include nodot;
 
   &__item {
     display: inline;

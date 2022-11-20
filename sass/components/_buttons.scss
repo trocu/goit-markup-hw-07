@@ -10,33 +10,33 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
 
-  // Slider button
-  &--order {
-    margin: 0 auto;
-    display: block;
-    padding: 10px 0;
-    width: 200px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// Slider button
+.c-slider__c-button {
+  margin: 0 auto;
+  display: block;
+  padding: 10px 0;
+  width: 200px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-      color: $primary-color;
-      background-color: $light-item-color;
-    }
+  &:hover,
+  &:focus {
+    color: $primary-color;
+    background-color: $light-item-color;
   }
+}
 
-  // Footer button
-  &--signup {
-    padding: 10px 76px 10px 46px;
-    position: relative;
-  }
+// Footer button
+.signup-form__c-button {
+  padding: 10px 76px 10px 46px;
+  position: relative;
+}
 
-  // Modal form button
-  &--send {
-    padding: 10px 76px;
-    display: block;
-    margin: 0 auto;
-  }
+// Modal form button
+.c-modal-form__c-button {
+  padding: 10px 76px;
+  display: block;
+  margin: 0 auto;
 }

@@ -73,7 +73,8 @@ ul {
   letter-spacing: 0.06em;
   cursor: pointer;
 }
-.c-button--order {
+
+.c-slider__c-button {
   margin: 0 auto;
   display: block;
   padding: 10px 0;
@@ -81,15 +82,17 @@ ul {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.c-button--order:hover, .c-button--order:focus {
+.c-slider__c-button:hover, .c-slider__c-button:focus {
   color: #212121;
   background-color: #f5f4fa;
 }
-.c-button--signup {
+
+.signup-form__c-button {
   padding: 10px 76px 10px 46px;
   position: relative;
 }
-.c-button--send {
+
+.c-modal-form__c-button {
   padding: 10px 76px;
   display: block;
   margin: 0 auto;

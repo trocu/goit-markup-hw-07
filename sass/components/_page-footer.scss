@@ -20,8 +20,7 @@
   }
 
   &__list {
-    list-style-type: none;
-    padding: 0;
+    @include nodot;
   }
 
   &__link {

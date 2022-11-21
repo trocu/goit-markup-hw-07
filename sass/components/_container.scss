@@ -4,9 +4,8 @@
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-
-  &--footer {
-    display: flex;
-    justify-content: space-between;
-  }
+}
+.l-container--footer {
+  display: flex;
+  justify-content: space-between;
 }

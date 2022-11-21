@@ -6,15 +6,13 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
-
-  // Offer section hidden title
-  &--hidden {
-    display: none;
-    opacity: 0;
-  }
-  
-  // USE case section
-  &--margin {
-    margin-top: 94px;
-  }
+}
+// Offer & card hidden title
+.c-section__title--hidden {
+  display: none;
+  opacity: 0;
+}
+// USE case section
+.c-section__title--margin {
+  margin-top: 94px;
 }

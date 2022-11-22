@@ -16,3 +16,7 @@
 .l-section--color {
   background-color: $light-item-color;
 }
+.l-section--no-top-padding {
+  padding-top: 0;
+  padding-bottom: 94px;
+}

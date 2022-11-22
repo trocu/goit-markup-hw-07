@@ -7,6 +7,24 @@ ul {
   margin: 0;
 }
 
+.l-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.l-container--footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .l-section {
   padding-block: 94px;
 }
@@ -27,22 +45,9 @@ ul {
   background-color: #f5f4fa;
 }
 
-.l-container {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.l-container--footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.l-section--no-top-padding {
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 
 .c-header {
@@ -160,22 +165,18 @@ ul {
 }
 
 .c-section-title {
-  margin-top: 0;
-  margin-bottom: 50px;
+  margin-block: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .c-section-title--hidden {
   display: none;
   opacity: 0;
-}
-
-.c-section-title--margin {
-  margin-top: 94px;
 }
 
 .c-button {

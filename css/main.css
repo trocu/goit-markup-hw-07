@@ -159,7 +159,7 @@ ul {
   fill: #2196f3;
 }
 
-.c-section__title {
+.c-section-title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
@@ -169,12 +169,12 @@ ul {
   text-align: center;
 }
 
-.c-section__title--hidden {
+.c-section-title--hidden {
   display: none;
   opacity: 0;
 }
 
-.c-section__title--margin {
+.c-section-title--margin {
   margin-top: 94px;
 }
 
@@ -290,7 +290,7 @@ ul {
   cursor: pointer;
 }
 
-.c-social-media__link--footer {
+.c-social-media__link--dark {
   background-color: rgba(255, 255, 255, 0.1);
   fill: #fff;
 }
